@@ -1,20 +1,21 @@
-import { useEffect, useState } from 'react'
+/* import { useEffect, useState } from 'react'
 import { doc, onSnapshot } from 'firebase/firestore'
-import db from '../../credential'
+import db from '../credential'
 
 const useGetAllCategory = () => {
-  const [category, setCategory] = useState<string[]>()
+  const [categories, setCategories] = useState<string[]>()
 
   const categorySubscribe = () => {
     const categoryRef = doc(db, 'bookmarks', 'category')
     onSnapshot(categoryRef, (cat) => {
       const category = cat.data() as {name: []}
-      setCategory(category.name)
+      setCategories(category.name)
     })
   }
   useEffect(() => categorySubscribe(), [])
 
-  return [category]
+  return [categories]
 }
 
 export default useGetAllCategory
+ */

@@ -1,10 +1,14 @@
 import type { NextPage } from 'next'
-import CategoryList from '../components'
+import Bookmarks from '../components/bookmarks'
+// import CategoryList from '../components'
+import Layout from './styled'
 
 const Home: NextPage = () => {
   return (
   <>
-  <CategoryList />
+  <Layout>
+    <Bookmarks />
+  </Layout>
   </>
   )
 }

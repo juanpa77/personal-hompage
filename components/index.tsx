@@ -1,10 +1,19 @@
-import useGetAllCategory from '../pages/hooks/useGetCategory'
+// import useBookmarks from '../hooks/useBookmarks'
+import List, { Item } from './styled'
 
 const CategoryList = () => {
-  const [category] = useGetAllCategory()
-  console.log(category)
+  // const bookmarks = useBookmarks()
+  // console.log(bookmarks)
   return (
-    <div></div>
+    <List>
+        {/* {
+          bookmarks?.map((bookmark, i) => {
+            return (
+              <Item key={i}>{bookmark.categoryName}</Item>
+            )
+          })
+        } */}
+    </List>
   )
 }
 

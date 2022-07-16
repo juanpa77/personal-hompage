@@ -1,14 +1,18 @@
 import styled from '@emotion/styled'
 
+const Wrapper = styled('div')`
+  display: flex;
+`
+
 export const Item = styled('li')`
   display: flex;
   background-color: #07275868;
 `
 
-const List = styled('div')`
+export const List = styled('ul')`
   display: flex;
   flex-direction: column;
   gap: 10px;
 `
 
-export default List
+export default Wrapper
